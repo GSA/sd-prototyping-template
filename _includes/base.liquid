@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ title }} - {{ site.name }}</title>
+    <link rel="stylesheet" href="{{ '/assets/uswds/css/styles.css' | url }}">
+    <script src="{{ '/assets/uswds/js/uswds-init.min.js' | url }}"></script>
+  </head>
+  <body>
+    {% include "banner" %}
+    {% include "header" %}
+    <div id="main" class="grid-container">
+      {{ content }}
+    </div>
+    {% include "footer" %}
+    {% include "identifier" %}
+    <script src="{{ '/assets/uswds/js/uswds.min.js' | url }}"></script>
+    <script src="{{ '/assets/js/main.js' | url }}"></script>
+  </body>
+</html>
